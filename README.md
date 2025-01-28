@@ -75,8 +75,7 @@ This project is a simple web application showcasing a collection of books and th
 - **CSS3:** Styling and layout (Flexbox and Grid)
 - **React:** Component-based structure 
 
-
-
+##  **Credits**
 
 - Shivaji Burgula (Project Developer)
 - Book images from various external sources
