@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0077B6;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0096C7;
+}
+
+nav a {
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #00A5D9;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 2rem;
+}
+
+/* Additional Information Section */
+.additional-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+/* Skills Section */
+.skills h2 {
+    font-size: 24px;
+    color: #0077B6;
+}
+
+section {
+    padding: 2rem;
+    background-color: #B8E9FF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #0077B6;
+}
+
+section p {
+    font-size: 16px;
+    color: #666;
+}
+
+footer {
+    background-color: #0077B6;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+footer .copyright {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    color: #000; /* Change to black */
+}
+
+footer .copyright:hover::after {
+    content: "My Portfolio by Shivaji Burgula";
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    background-color: #0077B6;
+    color: #98e8f7;
+    padding: 50px;
+    border: 1px solid #2b9ecb;
+    white-space: nowrap;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
