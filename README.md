@@ -33,7 +33,9 @@ This project is a simple web application showcasing a collection of books and th
 │   └── Screenshots/
 └── README.md
 ```
-# P1  To showcase Grid Layout and Flexbox Layout in a simple web application, we have created a basic HTML structure and added CSS styles
+# P1  
+
+### To showcase Grid Layout and Flexbox Layout in a simple web application, we have created a basic HTML structure and added CSS styles
 
 ### 📚 Book Collection (Grid Layout)
 
