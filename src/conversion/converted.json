@@ -1,0 +1,802 @@
+[
+  {
+    "Area (sq ft)": 3652,
+    "Bedrooms": 1,
+    "Bathrooms": 1,
+    "Location": "Rural",
+    "Age of Property (years)": 1,
+    "Price (in $1000)": 593
+  },
+  {
+    "Area (sq ft)": 1360,
+    "Bedrooms": 2,
+    "Bathrooms": 1,
+    "Location": "Downtown",
+    "Age of Property (years)": 1,
+    "Price (in $1000)": 764
+  },
+  {
+    "Area (sq ft)": 879,
+    "Bedrooms": 2,
+    "Bathrooms": 2,
+    "Location": "Rural",
+    "Age of Property (years)": 1,
+    "Price (in $1000)": 395
+  },
+  {
+    "Area (sq ft)": 630,
+    "Bedrooms": 4,
+    "Bathrooms": 3,
+    "Location": "Suburban",
+    "Age of Property (years)": 1,
+    "Price (in $1000)": 651
+  },
+  {
+    "Area (sq ft)": 4061,
+    "Bedrooms": 3,
+    "Bathrooms": 1,
+    "Location": "Rural",
+    "Age of Property (years)": 2,
+    "Price (in $1000)": 732
+  },
+  {
+    "Area (sq ft)": 3113,
+    "Bedrooms": 2,
+    "Bathrooms": 1,
+    "Location": "Downtown",
+    "Age of Property (years)": 2,
+    "Price (in $1000)": 937
+  },
+  {
+    "Area (sq ft)": 4493,
+    "Bedrooms": 3,
+    "Bathrooms": 3,
+    "Location": "Downtown",
+    "Age of Property (years)": 3,
+    "Price (in $1000)": 1183
+  },
+  {
+    "Area (sq ft)": 3885,
+    "Bedrooms": 5,
+    "Bathrooms": 2,
+    "Location": "Suburban",
+    "Age of Property (years)": 3,
+    "Price (in $1000)": 992
+  },
+  {
+    "Area (sq ft)": 4443,
+    "Bedrooms": 1,
+    "Bathrooms": 1,
+    "Location": "Downtown",
+    "Age of Property (years)": 4,
+    "Price (in $1000)": 1016
+  },
+  {
+    "Area (sq ft)": 1528,
+    "Bedrooms": 3,
+    "Bathrooms": 3,
+    "Location": "Downtown",
+    "Age of Property (years)": 4,
+    "Price (in $1000)": 884
+  },
+  {
+    "Area (sq ft)": 3112,
+    "Bedrooms": 1,
+    "Bathrooms": 2,
+    "Location": "Suburban",
+    "Age of Property (years)": 5,
+    "Price (in $1000)": 711
+  },
+  {
+    "Area (sq ft)": 2891,
+    "Bedrooms": 3,
+    "Bathrooms": 2,
+    "Location": "Suburban",
+    "Age of Property (years)": 5,
+    "Price (in $1000)": 789
+  },
+  {
+    "Area (sq ft)": 2455,
+    "Bedrooms": 4,
+    "Bathrooms": 1,
+    "Location": "Suburban",
+    "Age of Property (years)": 5,
+    "Price (in $1000)": 765
+  },
+  {
+    "Area (sq ft)": 2306,
+    "Bedrooms": 4,
+    "Bathrooms": 3,
+    "Location": "Downtown",
+    "Age of Property (years)": 5,
+    "Price (in $1000)": 1010
+  },
+  {
+    "Area (sq ft)": 1767,
+    "Bedrooms": 3,
+    "Bathrooms": 3,
+    "Location": "Downtown",
+    "Age of Property (years)": 5,
+    "Price (in $1000)": 906
+  },
+  {
+    "Area (sq ft)": 4340,
+    "Bedrooms": 2,
+    "Bathrooms": 1,
+    "Location": "Rural",
+    "Age of Property (years)": 7,
+    "Price (in $1000)": 700
+  },
+  {
+    "Area (sq ft)": 2954,
+    "Bedrooms": 5,
+    "Bathrooms": 2,
+    "Location": "Rural",
+    "Age of Property (years)": 8,
+    "Price (in $1000)": 739
+  },
+  {
+    "Area (sq ft)": 4384,
+    "Bedrooms": 2,
+    "Bathrooms": 1,
+    "Location": "Suburban",
+    "Age of Property (years)": 10,
+    "Price (in $1000)": 848
+  },
+  {
+    "Area (sq ft)": 3324,
+    "Bedrooms": 3,
+    "Bathrooms": 2,
+    "Location": "Suburban",
+    "Age of Property (years)": 10,
+    "Price (in $1000)": 822
+  },
+  {
+    "Area (sq ft)": 3231,
+    "Bedrooms": 4,
+    "Bathrooms": 1,
+    "Location": "Suburban",
+    "Age of Property (years)": 10,
+    "Price (in $1000)": 833
+  },
+  {
+    "Area (sq ft)": 1275,
+    "Bedrooms": 2,
+    "Bathrooms": 3,
+    "Location": "Suburban",
+    "Age of Property (years)": 10,
+    "Price (in $1000)": 597
+  },
+  {
+    "Area (sq ft)": 4993,
+    "Bedrooms": 4,
+    "Bathrooms": 1,
+    "Location": "Downtown",
+    "Age of Property (years)": 11,
+    "Price (in $1000)": 1207
+  },
+  {
+    "Area (sq ft)": 4617,
+    "Bedrooms": 3,
+    "Bathrooms": 1,
+    "Location": "Rural",
+    "Age of Property (years)": 12,
+    "Price (in $1000)": 767
+  },
+  {
+    "Area (sq ft)": 3842,
+    "Bedrooms": 1,
+    "Bathrooms": 2,
+    "Location": "Suburban",
+    "Age of Property (years)": 12,
+    "Price (in $1000)": 770
+  },
+  {
+    "Area (sq ft)": 2028,
+    "Bedrooms": 2,
+    "Bathrooms": 2,
+    "Location": "Suburban",
+    "Age of Property (years)": 12,
+    "Price (in $1000)": 638
+  },
+  {
+    "Area (sq ft)": 1995,
+    "Bedrooms": 5,
+    "Bathrooms": 3,
+    "Location": "Suburban",
+    "Age of Property (years)": 12,
+    "Price (in $1000)": 815
+  },
+  {
+    "Area (sq ft)": 1576,
+    "Bedrooms": 1,
+    "Bathrooms": 3,
+    "Location": "Downtown",
+    "Age of Property (years)": 12,
+    "Price (in $1000)": 773
+  },
+  {
+    "Area (sq ft)": 3195,
+    "Bedrooms": 1,
+    "Bathrooms": 1,
+    "Location": "Downtown",
+    "Age of Property (years)": 13,
+    "Price (in $1000)": 873
+  },
+  {
+    "Area (sq ft)": 3247,
+    "Bedrooms": 1,
+    "Bathrooms": 1,
+    "Location": "Suburban",
+    "Age of Property (years)": 14,
+    "Price (in $1000)": 676
+  },
+  {
+    "Area (sq ft)": 3961,
+    "Bedrooms": 4,
+    "Bathrooms": 1,
+    "Location": "Suburban",
+    "Age of Property (years)": 16,
+    "Price (in $1000)": 894
+  },
+  {
+    "Area (sq ft)": 3702,
+    "Bedrooms": 4,
+    "Bathrooms": 1,
+    "Location": "Rural",
+    "Age of Property (years)": 16,
+    "Price (in $1000)": 718
+  },
+  {
+    "Area (sq ft)": 3573,
+    "Bedrooms": 2,
+    "Bathrooms": 3,
+    "Location": "Suburban",
+    "Age of Property (years)": 16,
+    "Price (in $1000)": 815
+  },
+  {
+    "Area (sq ft)": 2185,
+    "Bedrooms": 5,
+    "Bathrooms": 3,
+    "Location": "Suburban",
+    "Age of Property (years)": 16,
+    "Price (in $1000)": 826
+  },
+  {
+    "Area (sq ft)": 974,
+    "Bedrooms": 4,
+    "Bathrooms": 2,
+    "Location": "Rural",
+    "Age of Property (years)": 16,
+    "Price (in $1000)": 475
+  },
+  {
+    "Area (sq ft)": 700,
+    "Bedrooms": 4,
+    "Bathrooms": 2,
+    "Location": "Rural",
+    "Age of Property (years)": 17,
+    "Price (in $1000)": 446
+  },
+  {
+    "Area (sq ft)": 4514,
+    "Bedrooms": 4,
+    "Bathrooms": 1,
+    "Location": "Suburban",
+    "Age of Property (years)": 19,
+    "Price (in $1000)": 943
+  },
+  {
+    "Area (sq ft)": 2481,
+    "Bedrooms": 1,
+    "Bathrooms": 2,
+    "Location": "Downtown",
+    "Age of Property (years)": 20,
+    "Price (in $1000)": 818
+  },
+  {
+    "Area (sq ft)": 3388,
+    "Bedrooms": 1,
+    "Bathrooms": 2,
+    "Location": "Downtown",
+    "Age of Property (years)": 21,
+    "Price (in $1000)": 906
+  },
+  {
+    "Area (sq ft)": 3058,
+    "Bedrooms": 2,
+    "Bathrooms": 2,
+    "Location": "Suburban",
+    "Age of Property (years)": 22,
+    "Price (in $1000)": 721
+  },
+  {
+    "Area (sq ft)": 2933,
+    "Bedrooms": 5,
+    "Bathrooms": 3,
+    "Location": "Suburban",
+    "Age of Property (years)": 22,
+    "Price (in $1000)": 889
+  },
+  {
+    "Area (sq ft)": 3599,
+    "Bedrooms": 1,
+    "Bathrooms": 1,
+    "Location": "Rural",
+    "Age of Property (years)": 23,
+    "Price (in $1000)": 543
+  },
+  {
+    "Area (sq ft)": 2541,
+    "Bedrooms": 3,
+    "Bathrooms": 1,
+    "Location": "Downtown",
+    "Age of Property (years)": 23,
+    "Price (in $1000)": 888
+  },
+  {
+    "Area (sq ft)": 1521,
+    "Bedrooms": 4,
+    "Bathrooms": 3,
+    "Location": "Rural",
+    "Age of Property (years)": 24,
+    "Price (in $1000)": 544
+  },
+  {
+    "Area (sq ft)": 1495,
+    "Bedrooms": 3,
+    "Bathrooms": 2,
+    "Location": "Suburban",
+    "Age of Property (years)": 24,
+    "Price (in $1000)": 611
+  },
+  {
+    "Area (sq ft)": 3944,
+    "Bedrooms": 1,
+    "Bathrooms": 1,
+    "Location": "Downtown",
+    "Age of Property (years)": 25,
+    "Price (in $1000)": 924
+  },
+  {
+    "Area (sq ft)": 4390,
+    "Bedrooms": 1,
+    "Bathrooms": 1,
+    "Location": "Rural",
+    "Age of Property (years)": 26,
+    "Price (in $1000)": 617
+  },
+  {
+    "Area (sq ft)": 4056,
+    "Bedrooms": 1,
+    "Bathrooms": 3,
+    "Location": "Suburban",
+    "Age of Property (years)": 26,
+    "Price (in $1000)": 793
+  },
+  {
+    "Area (sq ft)": 3604,
+    "Bedrooms": 3,
+    "Bathrooms": 1,
+    "Location": "Suburban",
+    "Age of Property (years)": 26,
+    "Price (in $1000)": 788
+  },
+  {
+    "Area (sq ft)": 3404,
+    "Bedrooms": 3,
+    "Bathrooms": 1,
+    "Location": "Suburban",
+    "Age of Property (years)": 26,
+    "Price (in $1000)": 768
+  },
+  {
+    "Area (sq ft)": 3273,
+    "Bedrooms": 3,
+    "Bathrooms": 1,
+    "Location": "Downtown",
+    "Age of Property (years)": 26,
+    "Price (in $1000)": 955
+  },
+  {
+    "Area (sq ft)": 1304,
+    "Bedrooms": 4,
+    "Bathrooms": 1,
+    "Location": "Downtown",
+    "Age of Property (years)": 26,
+    "Price (in $1000)": 808
+  },
+  {
+    "Area (sq ft)": 4797,
+    "Bedrooms": 1,
+    "Bathrooms": 3,
+    "Location": "Suburban",
+    "Age of Property (years)": 27,
+    "Price (in $1000)": 865
+  },
+  {
+    "Area (sq ft)": 2000,
+    "Bedrooms": 1,
+    "Bathrooms": 3,
+    "Location": "Suburban",
+    "Age of Property (years)": 28,
+    "Price (in $1000)": 584
+  },
+  {
+    "Area (sq ft)": 1475,
+    "Bedrooms": 5,
+    "Bathrooms": 3,
+    "Location": "Downtown",
+    "Age of Property (years)": 28,
+    "Price (in $1000)": 931
+  },
+  {
+    "Area (sq ft)": 4145,
+    "Bedrooms": 3,
+    "Bathrooms": 3,
+    "Location": "Suburban",
+    "Age of Property (years)": 29,
+    "Price (in $1000)": 896
+  },
+  {
+    "Area (sq ft)": 2547,
+    "Bedrooms": 5,
+    "Bathrooms": 1,
+    "Location": "Suburban",
+    "Age of Property (years)": 29,
+    "Price (in $1000)": 776
+  },
+  {
+    "Area (sq ft)": 2527,
+    "Bedrooms": 3,
+    "Bathrooms": 1,
+    "Location": "Rural",
+    "Age of Property (years)": 29,
+    "Price (in $1000)": 524
+  },
+  {
+    "Area (sq ft)": 1684,
+    "Bedrooms": 4,
+    "Bathrooms": 3,
+    "Location": "Rural",
+    "Age of Property (years)": 29,
+    "Price (in $1000)": 550
+  },
+  {
+    "Area (sq ft)": 1370,
+    "Bedrooms": 4,
+    "Bathrooms": 3,
+    "Location": "Suburban",
+    "Age of Property (years)": 29,
+    "Price (in $1000)": 669
+  },
+  {
+    "Area (sq ft)": 3505,
+    "Bedrooms": 4,
+    "Bathrooms": 3,
+    "Location": "Suburban",
+    "Age of Property (years)": 30,
+    "Price (in $1000)": 880
+  },
+  {
+    "Area (sq ft)": 2561,
+    "Bedrooms": 5,
+    "Bathrooms": 3,
+    "Location": "Downtown",
+    "Age of Property (years)": 30,
+    "Price (in $1000)": 1036
+  },
+  {
+    "Area (sq ft)": 3056,
+    "Bedrooms": 3,
+    "Bathrooms": 2,
+    "Location": "Rural",
+    "Age of Property (years)": 31,
+    "Price (in $1000)": 603
+  },
+  {
+    "Area (sq ft)": 891,
+    "Bedrooms": 4,
+    "Bathrooms": 3,
+    "Location": "Suburban",
+    "Age of Property (years)": 31,
+    "Price (in $1000)": 617
+  },
+  {
+    "Area (sq ft)": 966,
+    "Bedrooms": 5,
+    "Bathrooms": 1,
+    "Location": "Rural",
+    "Age of Property (years)": 32,
+    "Price (in $1000)": 462
+  },
+  {
+    "Area (sq ft)": 661,
+    "Bedrooms": 5,
+    "Bathrooms": 2,
+    "Location": "Suburban",
+    "Age of Property (years)": 32,
+    "Price (in $1000)": 612
+  },
+  {
+    "Area (sq ft)": 534,
+    "Bedrooms": 3,
+    "Bathrooms": 1,
+    "Location": "Rural",
+    "Age of Property (years)": 32,
+    "Price (in $1000)": 319
+  },
+  {
+    "Area (sq ft)": 2863,
+    "Bedrooms": 4,
+    "Bathrooms": 1,
+    "Location": "Rural",
+    "Age of Property (years)": 33,
+    "Price (in $1000)": 600
+  },
+  {
+    "Area (sq ft)": 1775,
+    "Bedrooms": 2,
+    "Bathrooms": 2,
+    "Location": "Suburban",
+    "Age of Property (years)": 33,
+    "Price (in $1000)": 571
+  },
+  {
+    "Area (sq ft)": 1516,
+    "Bedrooms": 4,
+    "Bathrooms": 1,
+    "Location": "Rural",
+    "Age of Property (years)": 33,
+    "Price (in $1000)": 465
+  },
+  {
+    "Area (sq ft)": 992,
+    "Bedrooms": 5,
+    "Bathrooms": 1,
+    "Location": "Suburban",
+    "Age of Property (years)": 33,
+    "Price (in $1000)": 613
+  },
+  {
+    "Area (sq ft)": 3592,
+    "Bedrooms": 4,
+    "Bathrooms": 2,
+    "Location": "Downtown",
+    "Age of Property (years)": 34,
+    "Price (in $1000)": 1051
+  },
+  {
+    "Area (sq ft)": 2070,
+    "Bedrooms": 4,
+    "Bathrooms": 1,
+    "Location": "Suburban",
+    "Age of Property (years)": 34,
+    "Price (in $1000)": 669
+  },
+  {
+    "Area (sq ft)": 1978,
+    "Bedrooms": 1,
+    "Bathrooms": 2,
+    "Location": "Rural",
+    "Age of Property (years)": 34,
+    "Price (in $1000)": 389
+  },
+  {
+    "Area (sq ft)": 4298,
+    "Bedrooms": 2,
+    "Bathrooms": 2,
+    "Location": "Rural",
+    "Age of Property (years)": 35,
+    "Price (in $1000)": 669
+  },
+  {
+    "Area (sq ft)": 2778,
+    "Bedrooms": 1,
+    "Bathrooms": 2,
+    "Location": "Downtown",
+    "Age of Property (years)": 35,
+    "Price (in $1000)": 817
+  },
+  {
+    "Area (sq ft)": 4988,
+    "Bedrooms": 1,
+    "Bathrooms": 1,
+    "Location": "Suburban",
+    "Age of Property (years)": 36,
+    "Price (in $1000)": 806
+  },
+  {
+    "Area (sq ft)": 1863,
+    "Bedrooms": 5,
+    "Bathrooms": 2,
+    "Location": "Rural",
+    "Age of Property (years)": 36,
+    "Price (in $1000)": 574
+  },
+  {
+    "Area (sq ft)": 1100,
+    "Bedrooms": 1,
+    "Bathrooms": 2,
+    "Location": "Suburban",
+    "Age of Property (years)": 36,
+    "Price (in $1000)": 448
+  },
+  {
+    "Area (sq ft)": 1582,
+    "Bedrooms": 2,
+    "Bathrooms": 1,
+    "Location": "Rural",
+    "Age of Property (years)": 37,
+    "Price (in $1000)": 364
+  },
+  {
+    "Area (sq ft)": 1378,
+    "Bedrooms": 1,
+    "Bathrooms": 2,
+    "Location": "Downtown",
+    "Age of Property (years)": 37,
+    "Price (in $1000)": 673
+  },
+  {
+    "Area (sq ft)": 741,
+    "Bedrooms": 1,
+    "Bathrooms": 1,
+    "Location": "Downtown",
+    "Age of Property (years)": 37,
+    "Price (in $1000)": 580
+  },
+  {
+    "Area (sq ft)": 2935,
+    "Bedrooms": 3,
+    "Bathrooms": 3,
+    "Location": "Downtown",
+    "Age of Property (years)": 39,
+    "Price (in $1000)": 955
+  },
+  {
+    "Area (sq ft)": 1269,
+    "Bedrooms": 5,
+    "Bathrooms": 2,
+    "Location": "Rural",
+    "Age of Property (years)": 39,
+    "Price (in $1000)": 508
+  },
+  {
+    "Area (sq ft)": 3671,
+    "Bedrooms": 4,
+    "Bathrooms": 1,
+    "Location": "Suburban",
+    "Age of Property (years)": 40,
+    "Price (in $1000)": 817
+  },
+  {
+    "Area (sq ft)": 2562,
+    "Bedrooms": 4,
+    "Bathrooms": 2,
+    "Location": "Downtown",
+    "Age of Property (years)": 40,
+    "Price (in $1000)": 936
+  },
+  {
+    "Area (sq ft)": 3190,
+    "Bedrooms": 3,
+    "Bathrooms": 2,
+    "Location": "Rural",
+    "Age of Property (years)": 41,
+    "Price (in $1000)": 597
+  },
+  {
+    "Area (sq ft)": 837,
+    "Bedrooms": 5,
+    "Bathrooms": 3,
+    "Location": "Downtown",
+    "Age of Property (years)": 43,
+    "Price (in $1000)": 837
+  },
+  {
+    "Area (sq ft)": 564,
+    "Bedrooms": 4,
+    "Bathrooms": 3,
+    "Location": "Rural",
+    "Age of Property (years)": 43,
+    "Price (in $1000)": 410
+  },
+  {
+    "Area (sq ft)": 3068,
+    "Bedrooms": 3,
+    "Bathrooms": 1,
+    "Location": "Rural",
+    "Age of Property (years)": 44,
+    "Price (in $1000)": 548
+  },
+  {
+    "Area (sq ft)": 3419,
+    "Bedrooms": 5,
+    "Bathrooms": 2,
+    "Location": "Rural",
+    "Age of Property (years)": 45,
+    "Price (in $1000)": 711
+  },
+  {
+    "Area (sq ft)": 2085,
+    "Bedrooms": 1,
+    "Bathrooms": 2,
+    "Location": "Rural",
+    "Age of Property (years)": 45,
+    "Price (in $1000)": 378
+  },
+  {
+    "Area (sq ft)": 1002,
+    "Bedrooms": 3,
+    "Bathrooms": 3,
+    "Location": "Downtown",
+    "Age of Property (years)": 45,
+    "Price (in $1000)": 750
+  },
+  {
+    "Area (sq ft)": 4974,
+    "Bedrooms": 2,
+    "Bathrooms": 1,
+    "Location": "Suburban",
+    "Age of Property (years)": 46,
+    "Price (in $1000)": 835
+  },
+  {
+    "Area (sq ft)": 2399,
+    "Bedrooms": 4,
+    "Bathrooms": 3,
+    "Location": "Rural",
+    "Age of Property (years)": 46,
+    "Price (in $1000)": 587
+  },
+  {
+    "Area (sq ft)": 4272,
+    "Bedrooms": 2,
+    "Bathrooms": 3,
+    "Location": "Rural",
+    "Age of Property (years)": 47,
+    "Price (in $1000)": 673
+  },
+  {
+    "Area (sq ft)": 689,
+    "Bedrooms": 4,
+    "Bathrooms": 1,
+    "Location": "Downtown",
+    "Age of Property (years)": 47,
+    "Price (in $1000)": 704
+  },
+  {
+    "Area (sq ft)": 4926,
+    "Bedrooms": 3,
+    "Bathrooms": 3,
+    "Location": "Suburban",
+    "Age of Property (years)": 48,
+    "Price (in $1000)": 936
+  },
+  {
+    "Area (sq ft)": 1146,
+    "Bedrooms": 1,
+    "Bathrooms": 2,
+    "Location": "Suburban",
+    "Age of Property (years)": 48,
+    "Price (in $1000)": 428
+  },
+  {
+    "Area (sq ft)": 4343,
+    "Bedrooms": 3,
+    "Bathrooms": 3,
+    "Location": "Suburban",
+    "Age of Property (years)": 49,
+    "Price (in $1000)": 876
+  },
+  {
+    "Area (sq ft)": 3234,
+    "Bedrooms": 4,
+    "Bathrooms": 1,
+    "Location": "Rural",
+    "Age of Property (years)": 49,
+    "Price (in $1000)": 605
+  }
+]

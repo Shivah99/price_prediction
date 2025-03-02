@@ -1,0 +1,210 @@
+.model-manager {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  margin-top: 2rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.model-manager-header {
+  padding: 1rem 1.5rem;
+  background-color: var(--light-gray);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.model-manager-header h3 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.model-manager-header h3 i {
+  margin-right: 10px;
+}
+
+.toggle-icon {
+  margin-left: 10px;
+}
+
+.current-model-badge {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0.25rem 0.75rem;
+  border-radius: 16px;
+  font-size: 0.85rem;
+}
+
+.model-manager-content {
+  padding: 1.5rem;
+}
+
+.model-loading {
+  text-align: center;
+  padding: 0.5rem;
+  color: var(--dark-gray);
+}
+
+.current-model,
+.save-model-form,
+.saved-models {
+  margin-bottom: 1.5rem;
+}
+
+.current-model h4,
+.save-model-form h4,
+.saved-models h4 {
+  margin-bottom: 0.75rem;
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--light-gray);
+  padding-bottom: 0.5rem;
+}
+
+.model-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.model-name {
+  font-weight: 500;
+}
+
+.model-date {
+  font-size: 0.8rem;
+  color: var(--dark-gray);
+}
+
+.form-row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.save-model-form input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid var(--medium-gray);
+  border-radius: 4px;
+}
+
+.save-model-form button,
+.model-actions button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.save-model-form button:hover,
+.model-actions button:hover {
+  background-color: var(--secondary-color);
+}
+
+.save-model-form button:disabled,
+.model-actions button:disabled {
+  background-color: var(--medium-gray);
+  cursor: not-allowed;
+}
+
+.save-model-form button i,
+.model-actions button i {
+  margin-right: 5px;
+}
+
+.model-actions button.delete-btn {
+  background-color: #dc3545;
+}
+
+.model-actions button.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.saved-models ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.saved-models li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.saved-models li:last-child {
+  border-bottom: none;
+}
+
+.model-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.no-models {
+  text-align: center;
+  color: var(--dark-gray);
+  padding: 1rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .form-row {
+    flex-direction: column;
+  }
+  
+  .saved-models li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .model-actions {
+    margin-top: 0.5rem;
+    align-self: flex-end;
+  }
+}
+
+/* New metrics styles */
+.model-metrics {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.model-metrics .metric {
+  background-color: var(--light-gray);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+.model-metrics .metric:first-child {
+  margin-left: 0;
+}
+
+.model-metrics .metric:last-child {
+  margin-right: 0;
+}
+
+.model-metrics .metric h4 {
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+.model-metrics .metric p {
+  margin: 0.5rem 0 0;
+  color: var(--dark-gray);
+  font-size: 1.25rem;
+  font-weight: 500;
+}

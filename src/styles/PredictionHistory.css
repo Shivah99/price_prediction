@@ -1,0 +1,149 @@
+.prediction-history {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  margin-top: 2rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.prediction-history-header {
+  padding: 1rem 1.5rem;
+  background-color: var(--light-gray);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prediction-history-header h3 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.prediction-history-header h3 i {
+  margin-right: 10px;
+}
+
+.toggle-icon {
+  margin-left: 10px;
+}
+
+.prediction-history-content {
+  padding: 1.5rem;
+}
+
+.loading, .no-data {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--dark-gray);
+}
+
+.chart-container {
+  margin-bottom: 2rem;
+}
+
+.chart-container h4,
+.history-table h4,
+.locations-summary h4 {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--light-gray);
+  padding-bottom: 0.5rem;
+}
+
+.history-table {
+  margin-bottom: 2rem;
+  overflow-x: auto;
+}
+
+.history-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table th,
+.history-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--light-gray);
+  text-align: left;
+}
+
+.history-table th {
+  background-color: var(--light-gray);
+  font-weight: 500;
+}
+
+.history-table tr:last-child td {
+  border-bottom: none;
+}
+
+.history-table tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.locations-summary {
+  margin-bottom: 1.5rem;
+}
+
+.location-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.location-card {
+  flex: 1;
+  min-width: 200px;
+  background-color: var(--light-gray);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.location-card h5 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.location-price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.location-count {
+  font-size: 0.85rem;
+  color: var(--dark-gray);
+}
+
+.clear-history-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  gap: 0.5rem;
+}
+
+.clear-history-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .location-cards {
+    flex-direction: column;
+  }
+  
+  .location-card {
+    min-width: unset;
+  }
+}
