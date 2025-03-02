@@ -1,78 +1,133 @@
 # Real Estate Price Predictor
 
-A machine learning application that predicts real estate prices using neural networks.
+![Real Estate Price Predictor](https://raw.githubusercontent.com/Shivah99/Price_Prediction/main/public/logo192.png)
+
+A machine learning web application that predicts real estate prices using neural networks. This application allows users to input property details and receive an estimated price based on a trained model.
+
+## Project Overview
+
+The Real Estate Price Predictor uses Brain.js to create and train a neural network model on real estate data. It provides an intuitive interface for users to input property details such as location, size, number of bedrooms, and other factors to get accurate price predictions.
+
+### Features
+
+- **Machine Learning-Based Predictions**: Uses neural networks to predict property prices
+- **Interactive UI**: Easy-to-use interface for entering property details
+- **Data Visualization**: Charts showing prediction results and comparisons
+- **Excel to JSON Conversion**: Upload and convert Excel datasets
+- **Mobile-Responsive Design**: Works on devices of all sizes
+
+### Technologies Used
+
+- **Frontend**: React.js
+- **Machine Learning**: Brain.js
+- **Data Visualization**: Chart.js, Recharts
+- **Styling**: CSS, Bootstrap
+- **Data Processing**: XLSX.js for Excel file handling
+- **Storage**: IndexedDB for client-side data persistence
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14.0.0 or higher)
+- npm (v6.0.0 or higher)
+
+### How to Run Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Shivah99/Price_Prediction.git
+   cd Price_Prediction
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm start
+   ```
+
+4. **Open your browser:**
+   The application will be available at [http://localhost:3000](http://localhost:3000)
+
+## Deployment
+
+The application is deployed using GitHub Pages. You can access the live version at [https://shivah99.github.io/Price_Prediction](https://shivah99.github.io/Price_Prediction)
+
+### Deploying to GitHub Pages
+
+To deploy the application to GitHub Pages:
+
+1. **Install the GitHub Pages package:**
+   ```bash
+   npm install --save-dev gh-pages
+   ```
+
+2. **Add the following scripts to your package.json:**
+   ```json
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
+   ```
+
+3. **Add homepage field to your package.json:**
+   ```json
+   "homepage": "https://[your-username].github.io/Price_Prediction"
+   ```
+
+4. **Deploy the application:**
+   ```bash
+   npm run deploy
+   ```
+
+## Usage Guide
+
+1. **Input Property Details:**
+   - Enter the property area in square feet
+   - Select the number of bedrooms and bathrooms
+   - Choose the property location
+   - Enter the property age
+
+2. **Get Prediction:**
+   - Click on the "Predict Price" button
+   - View the predicted price and confidence interval
+   - Observe the visual representation in the charts
+
+3. **Data Management:**
+   - Upload Excel datasets using the Data Converter
+   - View dataset statistics
+   - Retrain the model with new data (Admin feature)
 
 ## Project Structure
 
-The project has been streamlined for better maintainability:
+- `/public` - Static files and index.html
+- `/src` - React source code
+  - `/components` - Reusable UI components
+  - `/models` - Brain.js model implementations
+  - `/conversion` - Excel to JSON conversion utilities
+  - `/utils` - Helper functions and data processing
+  - `/services` - API and data services
+  - `/styles` - CSS stylesheets
 
-# Getting Started with Create React App
+## Contributing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Available Scripts
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-In the project directory, you can run:
+## License
 
-### `npm start`
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Acknowledgements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Brain.js](https://brain.js.org/) for the neural network implementation
+- [Create React App](https://create-react-app.dev/) for bootstrapping the project
+- [Chart.js](https://www.chartjs.org/) for data visualization
+- [Bootstrap](https://getbootstrap.com/) for UI components
