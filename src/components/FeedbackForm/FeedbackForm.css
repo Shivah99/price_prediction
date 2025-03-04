@@ -1,0 +1,27 @@
+.feedback-form-container {
+  max-width: 600px;
+  margin: 1rem auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.rating-selector {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.rating-button {
+  width: 18%;
+  margin-right: 2%;
+}
+
+.rating-button:last-child {
+  margin-right: 0;
+}
+
+.feedback-submitted {
+  max-width: 600px;
+  margin: 1rem auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

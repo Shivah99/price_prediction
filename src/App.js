@@ -1,75 +1,45 @@
-import React, { useState, useEffect } from 'react';
-import DataInputForm from './components/DataInputForm';
-import PredictionResult from './components/PredictionResult';
-import { trainModel, makePrediction } from './utils/BrainJsModel';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import PredictionPage from './components/PredictionPage/PredictionPage';
+import ErrorBoundary from './components/ErrorBoundary';
+import { initializeModel } from './models/BrainJsModel';
+import { logError } from './utils/errorHandlingUtils';
 import './styles/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const [prediction, setPrediction] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
-  const [model, setModel] = useState(null);
-  const [isModelLoading, setIsModelLoading] = useState(true);
-
-  // Load and train the model on component mount
+  // Initialize the model when app loads
   useEffect(() => {
-    const initializeModel = async () => {
+    const loadModel = async () => {
       try {
-        const trainedModel = await trainModel();
-        setModel(trainedModel);
-        setIsModelLoading(false);
+        await initializeModel();
+        console.log("Model initialized successfully");
       } catch (error) {
-        console.error("Error initializing model:", error);
-        setIsModelLoading(false);
+        logError(error, 'Model Initialization');
+        console.error("Model initialization failed, using fallback prediction method");
       }
     };
     
-    initializeModel();
+    loadModel();
   }, []);
 
-  const handlePrediction = async (formData) => {
-    setIsLoading(true);
-    try {
-      const result = await makePrediction(model, formData);
-      setPrediction(result);
-    } catch (error) {
-      console.error("Prediction error:", error);
-      alert("Error making prediction. Please try again.");
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
   return (
-    <div className="app-container">
-      <header className="app-header">
-        <h1>Real Estate Price Predictor</h1>
-        <p>Predict property prices using neural network technology</p>
-      </header>
-      
-      <main className="app-main">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <DataInputForm 
-                onSubmit={handlePrediction} 
-                isLoading={isLoading || isModelLoading} 
-              />
+    <ErrorBoundary>
+      <Router basename="/price_prediction">
+        <div className="app-container">
+          <Switch>
+            <Route exact path="/" component={PredictionPage} />
+            {/* Add other routes as needed */}
+          </Switch>
+          
+          <footer className="app-footer">
+            <div className="container text-center py-3">
+              <p className="mb-0">© {new Date().getFullYear()} Real Estate Price Predictor | Powered by Brain.js</p>
             </div>
-            <div className="col-md-6">
-              <PredictionResult 
-                prediction={prediction} 
-                isLoading={isLoading} 
-                isModelLoading={isModelLoading} 
-              />
-            </div>
-          </div>
+          </footer>
         </div>
-      </main>
-      
-      <footer className="app-footer">
-        <p>© 2023 Real Estate Price Predictor | Powered by React & Brain.js</p>
-      </footer>
-    </div>
+      </Router>
+    </ErrorBoundary>
   );
 }
 

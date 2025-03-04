@@ -1,0 +1,190 @@
+.feedback-form-container {
+  max-width: 700px;
+  margin: 1rem auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+}
+
+.feedback-form-container .card-header {
+  background: linear-gradient(135deg, #4f8df9, #3462d8);
+  color: white;
+  padding: 0.8rem 1.2rem;
+}
+
+.header-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.rating-selector {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.rating-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 90px;
+  border-radius: 10px;
+  margin: 0 5px;
+  transition: all 0.2s ease;
+}
+
+.rating-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating-button:active {
+  transform: translateY(-2px);
+}
+
+.rating-emoji {
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+.rating-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.feedback-textarea {
+  border-radius: 8px;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s ease-in-out;
+}
+
+.feedback-textarea:focus {
+  border-color: #4f8df9;
+  box-shadow: 0 0 0 0.2rem rgba(79, 141, 249, 0.25);
+}
+
+.feedback-submitted {
+  max-width: 700px;
+  margin: 1rem auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+}
+
+.thank-you-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.success-icon {
+  font-size: 3.5rem;
+  margin: 1.5rem 0;
+  color: #28a745;
+  animation: bounceIn 0.5s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .rating-button {
+    width: 60px;
+    height: 70px;
+    margin: 0 2px;
+  }
+  
+  .rating-emoji {
+    font-size: 1.5rem;
+  }
+  
+  .rating-label {
+    font-size: 0.7rem;
+  }
+}
+
+.feedback-form-card {
+  margin: 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  border: none;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Button styling for the selected rating */
+.rating-button.btn-primary .rating-emoji {
+  transform: scale(1.1);
+}
+
+/* Feedback form visibility improvement */
+.prediction-results-container {
+  position: relative;
+}
+
+.feedback-button {
+  position: relative;
+  overflow: visible;
+}
+
+.feedback-button::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 12px;
+  height: 12px;
+  background-color: #FF4B4B;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 75, 75, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(255, 75, 75, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 75, 75, 0); }
+}
+
+/* Hover effects */
+.rating-button:hover:not(:disabled) {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Make the modal look better */
+.feedback-modal .modal-content {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.feedback-modal .modal-body {
+  padding: 0;
+}
+
+/* Styles for the thank you message */
+.thank-you-message {
+  text-align: center;
+  padding: 2rem;
+}
+
+.thank-you-message h4 {
+  color: #28a745;
+  margin: 1rem 0;
+}

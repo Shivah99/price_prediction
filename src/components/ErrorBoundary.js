@@ -1,9 +1,10 @@
 import React from 'react';
+import { displayErrorMessage } from '../utils/errorHandlingUtils';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { hasError: false, error: null, errorInfo: null };
+    this.state = { hasError: false, errorInfo: null };
   }
 
   static getDerivedStateFromError(error) {
@@ -11,39 +12,31 @@ class ErrorBoundary extends React.Component {
   }
 
   componentDidCatch(error, errorInfo) {
-    console.error("Application error:", error, errorInfo);
     this.setState({
       error: error,
       errorInfo: errorInfo
     });
+
+    // Log the error
+    console.error('Error caught by boundary:', error, errorInfo);
+
+    // Display a user-friendly message
+    displayErrorMessage('Something went wrong. The application will continue to work but some features may be limited.');
   }
 
   render() {
     if (this.state.hasError) {
       return (
-        <div style={{ 
-          padding: '20px', 
-          margin: '20px', 
-          border: '1px solid #dc3545',
-          borderRadius: '5px',
-          backgroundColor: '#f8d7da',
-          color: '#721c24'
-        }}>
-          <h2>Something went wrong</h2>
-          <p>The application encountered an unexpected error. Please refresh the page and try again.</p>
+        <div className="error-container p-4 m-3 border border-danger rounded">
+          <h3 className="text-danger">Something went wrong</h3>
+          <p>The application encountered an error but will continue running with limited functionality.</p>
           <button 
+            className="btn btn-primary mt-2" 
             onClick={() => window.location.reload()}
-            style={{
-              padding: '8px 16px',
-              backgroundColor: '#dc3545',
-              color: 'white',
-              border: 'none',
-              borderRadius: '4px',
-              cursor: 'pointer'
-            }}
           >
-            Refresh Page
+            Reload Application
           </button>
+          {this.props.children}
         </div>
       );
     }

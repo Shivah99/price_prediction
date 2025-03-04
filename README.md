@@ -140,6 +140,68 @@ npm run deploy
 - **Training Interface**: Ability to train custom models with your data
 - **Export Results**: Save prediction results for later reference
 
+### Bonus Feature: User Feedback & Error Handling
+
+The application includes a comprehensive system for collecting user feedback and handling errors, ensuring a smooth user experience even when issues arise.
+
+#### User Feedback System
+
+Users can provide feedback about prediction accuracy through:
+- A 5-point rating scale to evaluate prediction quality
+- An optional text field to explain why they believe a prediction is inaccurate
+- Feedback submission immediately after receiving a prediction result
+
+This feedback is stored locally and can be used to:
+- Improve the prediction model over time
+- Identify patterns in prediction inaccuracies
+- Target specific areas for model improvement
+
+#### Robust Error Handling
+
+The application features comprehensive error handling to ensure users always receive helpful guidance:
+
+1. **Input Validation**
+   - Real-time validation as users enter data
+   - Clear, contextual error messages
+   - Suggestions for valid input ranges
+   - Prevention of form submission with invalid data
+
+2. **Prediction Error Detection**
+   - Identification of unreasonable prediction results
+   - Sanity checks on predictions (e.g., price per square foot)
+   - Alerts for potentially unreliable predictions
+
+3. **Edge Case Handling**
+   - Support for unusual but valid property configurations
+   - Graceful handling of missing data points
+   - Appropriate responses for extreme input values
+
+4. **User-Friendly Error Messages**
+   - Plain language explanations of issues
+   - Specific guidance on how to resolve problems
+   - Different message styles based on error severity
+
+5. **System Error Recovery**
+   - Automatic retry for temporary issues
+   - Data preservation when errors occur
+   - Fallback options when optimal methods fail
+
+#### Implementation Examples
+
+- Input fields change border color based on validation status
+- Toast notifications for non-blocking warnings
+- Modal dialogs for critical errors requiring attention
+- Inline help text providing context-sensitive guidance
+- Confidence indicators showing prediction reliability
+
+#### Error Logging & Monitoring
+
+The system maintains error logs to help identify recurring issues:
+- Error type categorization
+- Timestamps for tracking error patterns
+- Input data associated with errors (anonymized)
+- User feedback correlated with error instances
+
 ## Technologies Used
 
 ### Frontend

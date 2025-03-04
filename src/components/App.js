@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import DataInputForm from './DataInputForm';
 import PredictionResult from './PredictionResult';
 import PredictionChart from './PredictionChart';

@@ -1,0 +1,242 @@
+.prediction-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.prediction-card:hover {
+  transform: translateY(-3px);
+}
+
+.prediction-card .card-header {
+  background: linear-gradient(135deg, #4f8df9, #3462d8);
+  color: white;
+  padding: 0.8rem 1.2rem;
+}
+
+.header-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.prediction-value {
+  color: #3462d8;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.prediction-label {
+  color: #666;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.prediction-details {
+  background-color: #f8faff;
+  padding: 1rem;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.prediction-details h5 {
+  color: #3462d8;
+  margin-bottom: 1rem;
+}
+
+.prediction-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.prediction-details ul li {
+  margin-bottom: 0.5rem;
+  border-bottom: 1px dashed #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+.prediction-warning {
+  background-color: #fff5e6;
+  border-left: 4px solid #ff9800;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+.warning-icon {
+  margin-right: 8px;
+}
+
+.feedback-toggle-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.prediction-results-container {
+  margin-bottom: 2rem;
+}
+
+.prediction-results-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  border: none;
+}
+
+.price-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #28a745;
+  margin-bottom: 0;
+}
+
+.property-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.property-details > div {
+  margin-bottom: 0.5rem;
+}
+
+.feedback-button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: white;
+  color: #3462d8;
+  border: 1px solid #3462d8;
+  transition: all 0.2s ease;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  min-width: 200px;
+  position: relative;
+}
+
+.feedback-button:hover {
+  background-color: #f0f4ff;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+.feedback-icon {
+  margin-right: 8px;
+  font-style: normal;
+}
+
+/* Notification dot for feedback reminder */
+.notification-dot {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(255, 0, 0, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+}
+
+/* Feedback reminder tooltip */
+.feedback-reminder {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1050;
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.reminder-content {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close-reminder {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Prediction quality indicator */
+.prediction-quality-indicator {
+  width: 100%;
+  padding: 1rem;
+}
+
+.accuracy-meter {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.accuracy-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.accuracy-bar {
+  height: 20px;
+  background: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.accuracy-value {
+  height: 100%;
+  background: linear-gradient(90deg, #59ce8f 0%, #28a745 100%);
+  border-radius: 10px 0 0 10px;
+}
+
+.accuracy-percentage {
+  text-align: right;
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Make the feedback modal more prominent */
+.feedback-modal .modal-content {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .prediction-value {
+    font-size: 2rem;
+  }
+  
+  .prediction-details {
+    margin-top: 1.5rem;
+  }
+
+  .price-value {
+    font-size: 2rem;
+  }
+}

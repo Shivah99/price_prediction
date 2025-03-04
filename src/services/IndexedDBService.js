@@ -55,8 +55,51 @@ class IndexedDBService {
         // Create object store for settings
         if (!db.objectStoreNames.contains(SETTINGS_STORE)) {
           const settingsStore = db.createObjectStore(SETTINGS_STORE, { keyPath: 'id' });
+          settingsStore.createIndex('name', 'name', { unique: false });
           console.log('Settings store created');
         }
+      };
+    });
+  }
+
+  // Add this method to check if IndexedDB is available and working
+  async checkIndexedDBAvailability() {
+    return new Promise((resolve) => {
+      // Check if IndexedDB is supported
+      if (!window.indexedDB) {
+        console.error("Your browser doesn't support IndexedDB");
+        resolve(false);
+        return;
+      }
+
+      // Try to open a test database
+      const testRequest = window.indexedDB.open("test_db", 1);
+      
+      // Set a timeout in case the request hangs
+      const timeoutId = setTimeout(() => {
+        console.error("IndexedDB operation timed out");
+        resolve(false);
+      }, 2000);
+      
+      testRequest.onerror = () => {
+        clearTimeout(timeoutId);
+        console.error("Error accessing IndexedDB. It may be blocked by browser settings.");
+        resolve(false);
+      };
+      
+      testRequest.onsuccess = () => {
+        clearTimeout(timeoutId);
+        const db = testRequest.result;
+        db.close();
+        
+        // Clean up the test DB
+        try {
+          window.indexedDB.deleteDatabase("test_db");
+        } catch (e) {
+          // Ignore errors here
+        }
+        
+        resolve(true);
       };
     });
   }
@@ -64,6 +107,15 @@ class IndexedDBService {
   // Model related methods
   async saveModel(model) {
     try {
+      const isAvailable = await this.checkIndexedDBAvailability();
+      if (!isAvailable) {
+        console.warn("IndexedDB not available, using memory storage");
+        // Use memory storage as fallback
+        window._modelCache = window._modelCache || {};
+        window._modelCache[model.metadata?.id || 'default'] = model;
+        return true;
+      }
+
       await this.initDB();
       
       return new Promise((resolve, reject) => {
@@ -84,12 +136,23 @@ class IndexedDBService {
       });
     } catch (error) {
       console.error('IndexedDB save error:', error);
-      throw error;
+      // Use memory storage as fallback
+      window._modelCache = window._modelCache || {};
+      window._modelCache[model.metadata?.id || 'default'] = model;
+      return true;
     }
   }
 
   async loadModel(id) {
     try {
+      const isAvailable = await this.checkIndexedDBAvailability();
+      if (!isAvailable) {
+        console.warn("IndexedDB not available, using memory storage");
+        // Use memory storage as fallback
+        window._modelCache = window._modelCache || {};
+        return window._modelCache[id || 'default'];
+      }
+
       await this.initDB();
       
       return new Promise((resolve, reject) => {
@@ -115,7 +178,9 @@ class IndexedDBService {
       });
     } catch (error) {
       console.error('IndexedDB load error:', error);
-      throw error;
+      // Try memory storage as fallback
+      window._modelCache = window._modelCache || {};
+      return window._modelCache[id || 'default'];
     }
   }
 
