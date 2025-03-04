@@ -1,6 +1,12 @@
-# Real Estate Price Prediction App
+# Price Prediction
 
-A sophisticated web application that leverages neural networks to predict real estate prices using React.js for the frontend and Brain.js for machine learning capabilities.
+A machine learning application for predicting prices based on various features.
+
+## Repository
+
+https://github.com/Shivah99/price_prediction
+
+## Installation
 
 ## Project Overview
 

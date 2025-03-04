@@ -107,4 +107,6 @@ function App() {
   );
 }
 
+// Update any repository references from Price_Prediction to price_prediction
+
 export default App;
