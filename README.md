@@ -4,22 +4,18 @@ A machine learning web application that predicts real estate prices based on pro
 
 ## Project Overview
 
-This application uses React.js for the frontend interface and Brain.js to implement a neural network model that predicts property prices. Users can input property details like area, number of bedrooms, bathrooms, location, and age, and get a predicted price based on the trained model.
+This application is designed to predict real estate prices based on key property features such as area, number of bedrooms, bathrooms, location, and property age. The prediction model uses a neural network implemented with Brain.js that has been trained on real estate data to provide accurate price estimations.
 
-Key features:
-- Property prediction based on multiple factors
-- Neural network implementation with Brain.js
-- Data visualization of prediction history and feature importance
-- Local model storage using IndexedDB
-- Error handling and input validation
+### Key Aspects
+- **User-friendly input form** for property details
+- **Neural network model** for accurate price predictions
+- **Interactive data visualization** for understanding predictions
+- **Persistent model storage** to retain training data
+- **Responsive design** for cross-device compatibility
 
-## Technologies Used
+## Live Demo
 
-- **Frontend**: React.js, Bootstrap, CSS
-- **Neural Network**: Brain.js
-- **Data Visualization**: Chart.js
-- **Storage**: IndexedDB
-- **Deployment**: GitHub Pages / Vercel / Netlify
+Experience the application live: [Real Estate Price Predictor](https://Shivah99.github.io/Price_Prediction)
 
 ## How to Run Locally
 
