@@ -2,7 +2,7 @@
   "name": "price_predicter",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Shivah99.github.io/price_prediction",
+  "homepage": "https://shivah99.github.io/price_prediction",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^5.16.5",
