@@ -4,24 +4,19 @@
   "private": true,
   "homepage": "https://shivah99.github.io/price_prediction",
   "dependencies": {
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "bootstrap": "^5.3.3",
-    "brain.js": "^2.0.0-beta.24",
-    "chart.js": "^4.4.8",
-    "file-saver": "^2.0.5",
-    "fs": "^0.0.1-security",
-    "path": "^0.12.7",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.10.9",
-    "react-chartjs-2": "^5.3.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.1",
-    "recharts": "^2.15.1",
-    "web-vitals": "^2.1.4",
-    "xlsx": "^0.18.5"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "brain.js": "^2.0.0",
+    "chart.js": "^3.5.1",
+    "gh-pages": "^3.2.3",
+    "idb": "^6.1.4",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-chartjs-2": "^3.0.4",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,10 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "deploy:fix": "node deploy-fix.js",
-    "deploy:bypass": "node bypass-build.js",
-    "deploy:simple": "node simple-deploy.js"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -53,8 +45,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0",
-    "react-scripts": "^5.0.1",
     "rimraf": "^6.0.1"
   }
 }
