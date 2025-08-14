@@ -15,7 +15,7 @@ This application is designed to predict real estate prices based on key property
 
 ## Live Demo
 
-Experience the application live: [Real Estate Price Predictor](https://Shivah99.github.io/Price_Prediction)
+Experience the application live: [Real Estate Price Predictor](https://shivah99.github.io/price_prediction/)
 
 ## How to Run Locally
 
